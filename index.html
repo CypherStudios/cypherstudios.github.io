@@ -7,16 +7,80 @@
   * {
     font-family: sans-serif;
   }
+  body {
+    background: #5a7199;
+  }
+  #bkg {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:15em;
+    background-image: url("codes1.png");
+    background-attachment: fixed;
+  }
+  #mainPage {
+    background:white;
+    position: absolute;
+    top:10em;
+    left:2%;
+    right:2%;
+    height: fit-content;
+  }
+  #mainPageInside {
+    margin: 7em 1em 1em 1em;
+    height:fit-content;
+  }
+  #footer {
+    background: #555555;
+    color: white;
+    position: absolute;
+    left:0;
+    right:0;
+  }
+  #footerInside {
+    margin: 1em 1em 1em 1em;
+    height:fit-content;
+  }
+  #footerInside a {
+    color: lightblue;
+  }
+  #logo {
+    position:absolute;
+    top: -5em;
+    left: 5em;
+    width: 9em;
+    background: #000000;
+  }
 </style>
 </head>
 <body>
-  <h1>welcome to the Cypher Studios Open Source webpage!</h1>
-  <p>
-    We have a few projects that we are working on:
-  </p>
-  <ul>
-    <li>Cypher Chatbot - a simple chatbot AI</li>
-   <li><a href="/bounce-web/">Bounce-web</a> - an HTML5 reindition of the classic Pong arcade game</li>
-  </ul>
+  <div id="bkg"></div>
+
+  <div id="mainPage">
+    <img src = "https://cypherstudiosnet.files.wordpress.com/2016/07/cypherlogoclear1.png" id="logo"/>
+    <div id="mainPageInside">
+      <h1>welcome to the Cypher Studios Open Source webpage!</h1>
+      <p>
+        We have a few projects that we are working on:
+      </p>
+      <ul>
+        <li><a href="http://cypherstudios.github.io/chatBot/">Cypher Chatbot</a> - a simple chatbot AI</li>
+        <li><a href="http://cypherstudios.github.io/bounce-web/">Bounce-web</a> - an HTML5 reindition of the classic Pong arcade game</li>
+      </ul>
+    </div>
+
+
+    <div id="footer">
+      <div id="footerInside">
+        Any issues with our open-source webpage? Direct all emails to <a href="mailto:team@cypherstudios.net">team@cypherstudios.net</a> or <a href="https://github.com/CypherStudios/cypherstudios.github.io/issues">open an issue in github</a>.<br/><br/>
+
+        Cypher Studios and the Cypher Studios logo are &copy 2017 Cypher Studios Group.<br/> 
+        All other content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> 
+        <br/><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
